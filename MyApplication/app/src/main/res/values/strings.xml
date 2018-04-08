@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="title_activity_live_card_service">Hello World LiveCard</string>
+    <string name="app_name">Spectrum Monitor</string>
+    <string name="title_activity_live_card_service">Spectrum Monitor</string>
     <string name="action_stop">Stop</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Welcome to the app! Tap to enter the menu...</string>
+    <string name="title_rawresults">Raw Results</string>
+    <string name="title_imageresults">Image Results</string>
 </resources>

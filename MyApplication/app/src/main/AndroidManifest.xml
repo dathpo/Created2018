@@ -1,11 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="com.example.flejh.myapplication">
 
+<uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
+<uses-permission android:name="android.permission.INTERNET" />
+
 <application>
 
     <service
         android:name=".LiveCardService"
-        android:label="@string/title_activity_live_card_service"
+        android:label="@string/app_name"
         android:icon="@drawable/ic_glass_logo">
         <intent-filter>
             <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
@@ -16,8 +19,27 @@ package="com.example.flejh.myapplication">
     </service>
 
     <activity
-        android:name=".LiveCardMenuActivity"
+        android:name=".MainActivity"
         android:theme="@style/MenuTheme" />
+
+    <activity
+        android:name=".RawDataActivity"
+        android:immersive="true"
+        android:label="@string/title_rawresults"
+        android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.flejh.myapplication.MainActivity" />
+    </activity>
+    <activity
+        android:name=".ImageDataActivity"
+        android:immersive="true"
+        android:label="@string/title_imageresults"
+        android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.flejh.myapplication.MainActivity" />
+    </activity>
 
 </application>
 

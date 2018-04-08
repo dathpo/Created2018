@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="91ab4980-e8cf-4f73-99e8-d4931a85d023" name="created2018" url="https://devweb2017.cis.strath.ac.uk/emb15144-nodejs/">
+        <fileTransfer host="cafe.cis.strath.ac.uk" port="22" rootFolder="/home/emb15144/DEVWEB/2017/nodejs/commuter" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/display_image_data"
+        android:title="Display Image Data" />
+    <item
+        android:id="@+id/display_raw_data"
+        android:title="Display Raw Data" />
+</menu>
