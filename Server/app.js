@@ -14,8 +14,8 @@ app.post("/", function (request, response) {
   
 })
 io.on('connection', s => {
-  console.error('socket.io connection');
-  setInterval(() => s.emit('message', 'new data'), 1000);
+  console.error('socket.io connection'); 
+  setInterval(() => s.emit('message', (new Date()).getTime()+': ' + 'new data'), 200);
 });
 http.listen(3000, () => console.error('listening on http://localhost:3000/'));
 console.error('socket.io example');
